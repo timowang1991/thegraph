@@ -11,4 +11,5 @@ services:
             - /bin/sh
             - -c
             - |
+                npm i
                 sleep 99999999
