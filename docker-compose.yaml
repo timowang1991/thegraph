@@ -1,0 +1,14 @@
+version: "3.6"
+
+services:
+    zora-rinkeby:
+        container_name: zora-rinkeby
+        image: node:16-alpine3.12 # nikolaik/python-nodejs:python3.7-nodejs16-alpine
+        volumes:
+            - ./:/src
+        working_dir: /src
+        command:
+            - /bin/sh
+            - -c
+            - |
+                sleep 99999999
